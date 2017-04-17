@@ -1,84 +1,101 @@
 package com.shahrukhm.controller;
 
-import com.shahrukhm.view.MainApp;
+import com.shahrukhm.model.Authentication;
+import com.shahrukhm.model.ObservableProperties;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
+import org.apache.log4j.Logger;
 
-import javax.swing.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.SocketException;
-import java.util.Properties;
+import java.io.*;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
- * Created by shahrukhmubshar on 4/9/16.
- * Upload: Serves as a control in MVC pattern.
- * Purpose: Upload a local file to a remote server via FTP.
+ * A class for objects which handle file upload.
  */
-public class Upload {
+public class Upload implements Observer {
+
+    private static final String SERVER = "server";
+    private static final String PORT = "port";
+    private static final String DESTINATION = "destination";
+
+    final static Logger logger = Logger.getLogger(PasswordForm.class.getName());
+
+
     private FTPClient ftpClient;
-    private MainApp mainApp;
     private String destination;
+    private ObservableProperties observableProperties;
+    private Authentication authentication;
 
     /**
-     * Constructs a new Upload object with a single parameter being the calling form.
-     * @param mainApp - Used in the case of displaying message dialog.
+     * Constructs a new Upload object.
      * @throws IOException - If the properties file source is invalid. Unable to connect to server.
      */
-    public Upload(MainApp mainApp) throws IOException {
-        this.mainApp = mainApp;
+    public Upload(ObservableProperties observableProperties, Authentication authentication) throws IOException{
+        this.observableProperties = observableProperties;
+        this.authentication = authentication;
+        observableProperties.load();
+    }
 
-        // 1. Get server credentials from properties file.
-        Properties properties = new Properties();
-        properties.load(new FileInputStream("SpeedwayDatabaseTool.properties"));
-
-        String server = properties.getProperty("server");
-        int port = Integer.parseInt(properties.getProperty("port"));
-        String serverUser = properties.getProperty("server_user");
-        String serverPass = properties.getProperty("server_pass");
-        destination = properties.getProperty("destination");
+    /**
+     * Connects the Upload object using the initial credentials and paths from properties file.
+     * @throws IOException if unable to find ObservableProperties.
+     */
+    public void connect() throws IOException {
+        String server = observableProperties.getProperty(SERVER);
+        int port = Integer.parseInt(observableProperties.getProperty(PORT));
+        String user = authentication.getUser();
+        String password = new String(authentication.getPassword());
+        destination = observableProperties.getProperty(DESTINATION);
 
         // 2. Initialize ftpclient and enter local passive mode.
         ftpClient =  new FTPClient();
         ftpClient.connect(server, port);
-        ftpClient.login(serverUser, serverPass);
+        ftpClient.login(user, password);
         ftpClient.enterLocalPassiveMode();
         ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
     }
 
     /**
-     * Upload local file to remove server with a single parameter to identify destination filename.
-     * @param filename - Name for file on remote server.
+     * Determines if Upload object has a valid connection.
+     * @return true is a valid connection exists, otherwise false.
      */
-    public void uploadFile(String filename) {
+    public boolean isConnected() {
+        return ftpClient.isConnected();
+    }
+
+    /**
+     * Upload file to destination.
+     * @param f File to be uploaded.
+     * @param filename Name to write on upload.
+     * @return If upload was successful.
+     * @throws IOException when unable to store file.
+     */
+    public boolean uploadFile(File f, String filename) throws IOException {
+        boolean done = false;
+
+        // 1. Get local file for upload.
+        File localFile = f;
+        InputStream inputStream = new FileInputStream(localFile);
+
+        // 2. Upload file to destination.
+        done = ftpClient.storeFile(destination + filename, inputStream);
+
+        // 3. Close FTPClient and InputStream.
+        if (ftpClient.isConnected()) {
+            ftpClient.enterLocalPassiveMode();
+        }
+        inputStream.close();
+
+        return done;
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
         try {
-            // 1. Get local file for upload.
-            File localFile = new File(filename);
-            InputStream inputStream = new FileInputStream(localFile);
-
-            // 2. Upload file to destination.
-            boolean done = ftpClient.storeFile(destination + filename, inputStream);
-
-            // 3. Close input stream and display appropriate message.
-            inputStream.close();
-            if(done) JOptionPane.showMessageDialog(mainApp, "Sucessfully uploaded file.", "Success", JOptionPane.INFORMATION_MESSAGE);
-            else JOptionPane.showMessageDialog(mainApp, "Unsucessfully uploaded file.", "Error", JOptionPane.ERROR_MESSAGE);
-
+            connect();
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(mainApp, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
-        } finally {
-
-            // 4. Close ftp connection.
-            try {
-                if(ftpClient.isConnected()) {
-                    ftpClient.logout();
-                    ftpClient.disconnect();
-                }
-            } catch (IOException e) {
-                JOptionPane.showMessageDialog(mainApp, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
-            }
+            logger.debug("Upload: Cannot connect due to IOException.");
         }
     }
 }

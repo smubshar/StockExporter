@@ -15,7 +15,6 @@ public class Product {
     // Key product attributes.
     private String partNumber;
     private BigDecimal quantity;
-    private String strQuantity;
     private static final String store = "admin";
     private int isInStock = 0;
 
@@ -46,6 +45,9 @@ public class Product {
         return quantity;
     }
 
+    public void setQuantity(BigDecimal quantity) {
+        this.quantity = quantity;
+    }
     /**
      * Generate a list of the products attributes.
      * @return List of products attributes.

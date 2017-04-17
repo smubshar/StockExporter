@@ -1,107 +1,101 @@
 package com.shahrukhm.controller;
 
+import com.shahrukhm.model.Authentication;
+import com.shahrukhm.model.ObservableProperties;
 import com.shahrukhm.model.Product;
+import org.apache.log4j.Logger;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
- * Created by shahrukhmubshar on 4/2/16.
- *
- * DAO: Serves as controller in MVC pattern.
- * Purpose: A simple data accessing object to bridge to communicate between application and Firebird database.
+ * Class that defines DAO behavior.
  */
-public class DAO {
-    // Database connection.
-    private Connection myConn;
+public abstract class DAO implements Observer {
+    final static Logger logger = Logger.getLogger(PasswordForm.class.getName());
+
+    protected ObservableProperties observableProperties;
+    protected Authentication authentication;
+    protected boolean isConnected;
+    protected Connection myConn;
 
     /**
-     * Creates a new DAO object with no parameters.
-     * @throws IOException - If the properties file source is invalid.
-     * @throws SQLException - If unable to access database, might be due to invalid credentials.
+     * Constructor to generate DAO object.
+     * @param authentication Object with user credentials.
+     * @param observableProperties Configurable properties.
      */
-    public DAO() throws IOException, SQLException {
-        // 1. Get database credentials for properties file.
-        Properties properties = new Properties();
-        properties.load(new FileInputStream("SpeedwayDatabaseTool.properties"));
-
-        String dburl = properties.getProperty("dburl");
-        String user = properties.getProperty("user");
-        String password = properties.getProperty("password");
-
-        // 2. Attempt database connection.
-        myConn = DriverManager.getConnection(dburl, user, password);
+    public DAO(Authentication authentication, ObservableProperties observableProperties) {
+        isConnected = false;
+        this.authentication = authentication;
+        this.observableProperties = observableProperties;
     }
+
+    /**
+     * Determine if DAOIdeal has a valid connection.
+     * @return true if connected, otherwise false.
+     */
+    public boolean isConnected() {
+        if (myConn == null) return  false;
+        return isConnected;
+    }
+
+    /**
+     * Connects the DAOIdeal object using initial credentials and properties file path.
+     * @throws SQLException if url or authentication was invalid.
+     */
+    public abstract void connect() throws SQLException;
 
     /**
      * Generates a list of products composed of all entries from the table PRODUCTLOCATION.
      * @return A list of type Product.
-     * @throws SQLException - If the query is invalid or called on a closed result set.
+     * @throws SQLException If the query is invalid or called on a closed result set.
      */
-    public List<Product> getAllProducts() throws SQLException {
-        // 1. Declare and initialize array list of type Product.
-        List<Product> productArrayList = new ArrayList<>();
-        Statement myStmt = null;
-        ResultSet myRs = null;
-
-        try {
-            // 2. Create statement and execute query.
-            myStmt = myConn.createStatement();
-            myRs = myStmt.executeQuery("SELECT * FROM PRODUCTLOCATION");
-
-            // 3. Iterate through result set, create Product for all entries, and add products to list.
-            while ( myRs.next() ) {
-                Product tempProduct = convertRowToProduct(myRs);
-                productArrayList.add(tempProduct);
-            }
-            return productArrayList;
-        }
-        finally {
-            close(myStmt, myRs);
-        }
-    }
+    public abstract List<Product> getAllProducts() throws SQLException;
 
     /**
      * Convert a row from the result set into a product.
-     * @param myRs - Result set obtained from getAllProducts() method.
+     * @param myRs Result set obtained from getAllProducts() method.
      * @return the product generated from result set row.
-     * @throws SQLException - If column labels are invalid or database access error occurs.
+     * @throws SQLException If column labels are invalid or database access error occurs.
      */
-    private Product convertRowToProduct(ResultSet myRs) throws SQLException {
-        // 1. Get Product data from result set row.
-        String partNumber = myRs.getString("PARTNUMBER");
-        BigDecimal quantity = myRs.getBigDecimal("ONHANDAVAILABLEQUANTITY");
+    protected abstract Product convertRowToProduct(ResultSet myRs) throws SQLException;
 
-        // 2. Generate product.
-        Product tempProduct = new Product(partNumber, quantity);
-        return tempProduct;
-    }
-
-
-    private void close(Statement myStmt) throws  SQLException {
+    protected void close(Statement myStmt) throws  SQLException {
         close(null, myStmt, null);
     }
 
-    private void close(Statement myStmt, ResultSet myRs) throws SQLException {
+    protected void close(Statement myStmt, ResultSet myRs) throws SQLException {
         close(null, myStmt, myRs);
     }
 
-    private void close(Connection myConn, Statement myStmt, ResultSet myRs) throws SQLException {
+    /**
+     * Close connection with database.
+     * @param myConn is the active connection object.
+     * @param myStmt
+     * @param myRs is the active result set object.
+     * @throws SQLException If a database error occurs.
+     */
+    protected void close(Connection myConn, Statement myStmt, ResultSet myRs) throws SQLException {
         if(myRs != null) {
             myRs.close();
         }
 
-        if(myStmt != null) {
-
-        }
-
         if(myConn != null) {
             myConn.close();
+        }
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        try {
+            connect();
+        } catch (SQLException e) {
+            isConnected = false;
+            logger.debug("DAOIdeal: Cannot connect due to SQLException.");
         }
     }
 }
