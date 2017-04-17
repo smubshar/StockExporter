@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SpeedwayDatabaseTool:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpeedwayDatabaseTool_jar</output-path>
+    <root id="archive" name="SpeedwayDatabaseTool.jar">
+      <element id="module-output" name="SpeedwayDatabaseTool" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/commons-net-3.4/commons-net-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/commons-csv-1.2/commons-csv-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/Jaybird-2.2.10-JDK_1.8/jaybird-full-2.2.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/c3p0-0.9.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/log4j-1.2.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/quartz-2.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/quartz-jobs-2.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/slf4j-api-1.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/libraries/java/quartz-2.2.3/lib/slf4j-log4j12-1.7.7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

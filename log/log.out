@@ -1,0 +1,388 @@
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+PasswordForm: Unable to connect due to SQLException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+2017-01-21 19:38:57.371 - Queue result in - true
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+PasswordForm: Unable to connect due to SQLException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+2017-02-04 13:20:16.292 - Queue result in - true
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+2017-02-04 13:39:54.278 - Queue result in - true
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+Upload: Cannot connect due to IOException.
+Upload: Cannot connect due to IOException.
+batch acquisition of 0 triggers
+BackgroundRequestStream: Unable to complete request due to SQLException.
+batch acquisition of 0 triggers
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+batch acquisition of 0 triggers
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+MainApp: Queue is full, unable to submit request at this time.
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+2017-02-04 13:50:25.544 - Queue result in - true
+2017-02-04 13:50:36.758 - Queue result in - true
+2017-02-04 13:50:46.573 - Queue result in - true
+batch acquisition of 0 triggers
+Upload: Cannot connect due to IOException.
+BackgroundRequestStream: Unable to connect Upload object.
+Upload: Cannot connect due to IOException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+BackgroundRequestStream: Unable to connect Upload object.
+Upload: Cannot connect due to IOException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+BackgroundRequestStream: Unable to connect Upload object.
+Upload: Cannot connect due to IOException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+PasswordForm: Unable to connect due to SQLException.
+BackgroundRequestStream: Unable to connect Upload object.
+Upload: Cannot connect due to IOException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+BackgroundRequestStream: Unable to connect Upload object.
+Upload: Cannot connect due to IOException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+2017-02-04 13:56:20.989 - Queue result in - true
+2017-02-04 13:56:32.484 - Queue result in - true
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+batch acquisition of 1 triggers
+Producing instance of Job 'group1.job1', class=com.shahrukhm.MyJob
+batch acquisition of 0 triggers
+Calling execute on job group1.job1
+2017-02-04 13:59:01.181 - Queue result in - true
+PasswordForm: Unable to connect due to SQLException.
+Using default implementation for ThreadExecutor
+Job execution threads will use class loader of thread: AWT-EventQueue-0
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Quartz Scheduler v.2.2.3 created.
+RAMJobStore initialized.
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+Quartz scheduler version: 2.2.3
+Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+batch acquisition of 0 triggers
+2017-03-03 10:54:59.367 - Queue result in - true
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
+batch acquisition of 0 triggers
